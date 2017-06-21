@@ -1,0 +1,12 @@
+
+language: r
+# install: <- we aren't really using this today
+cache: packages # caches packages on travis' end to speed up build time
+r_packages:
+  - "dplyr" # automatically gets newest version
+  - "testthat"
+script:
+  - Rscript test.R
+os:
+  - linux
+  - osx
